@@ -1,0 +1,5 @@
+<div class="row" *ngFor="let product of products">
+
+    <app-product-thumbnail [product]="product" (addToCart)="onAddToCart($event)"></app-product-thumbnail>
+    
+</div>

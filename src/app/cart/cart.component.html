@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col">
+        <h1>Your Shopping Cart</h1>
+        <app-cart-list [cartItems]="cartItems"></app-cart-list>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <h3>Totaalprijs:</h3>
+        {{ totaalPrijs | currency: 'EUR' }}
+    </div>
+</div>

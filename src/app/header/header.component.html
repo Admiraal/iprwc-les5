@@ -1,0 +1,13 @@
+<nav class="py-2 bg-light border-bottom">
+    <div class="container d-flex flex-wrap">
+        <ul class="nav me-auto">
+            <li class="nav-item"><a [routerLink]="['/']" [routerLinkActive]="'active'" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a [routerLink]="['/', 'products']" [routerLinkActive]="'active'" class="nav-link link-dark px-2">Products</a></li>
+            <li class="nav-item"><a [routerLink]="['/', 'cart']" [routerLinkActive]="'active'" class="nav-link link-dark px-2">Cart ({{ (cartService.cart$ | async)?.length }})</a></li>
+        </ul>
+        <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><del>Login</del></a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><del>Sign up</del></a></li>
+        </ul>
+    </div>
+</nav>

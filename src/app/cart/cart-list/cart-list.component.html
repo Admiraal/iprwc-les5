@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col">
+        <app-cart-list-item 
+            [cartItem]="product" 
+            [index]="i" 
+            (delete)="onDeletePressed($event)"
+            *ngFor="let product of cartItems; let i = index"></app-cart-list-item>
+    </div>
+</div>
